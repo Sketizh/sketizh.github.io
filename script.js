@@ -1,6 +1,16 @@
 (() => {
   "use strict";
 
+    const titleFrames = ["x", "xa", "xav", "xavr", "xav", "xa"];
+  let titleIndex = 0;
+
+  function animateTitle() {
+    document.title = titleFrames[titleIndex];
+    titleIndex = (titleIndex + 1) % titleFrames.length;
+  }
+
+  animateTitle();
+  window.setInterval(animateTitle, 500);
   const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   const audio = document.getElementById("background-audio");
   const entryScreen = document.getElementById("entry-screen");
