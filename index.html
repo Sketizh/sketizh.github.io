@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080807">
+  <meta name="description" content="Xavier. @sketizh. A little space online.">
+  <title>xavr.term — Xavi</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <button class="entry-screen" id="entry-screen" type="button" aria-label="Click anywhere to enter Xavr and start the music">
+    <span class="entry-content">
+      <span class="entry-wordmark">xavr<span>.</span></span>
+      <span class="entry-prompt">Click anywhere</span>
+      <span class="entry-hint">to enter</span>
+    </span>
+  </button>
+  <div class="background-image" aria-hidden="true"></div>
+  <div class="background-overlay" aria-hidden="true"></div>
+  <div class="scroll-progress" aria-hidden="true"><span id="scroll-progress-fill"></span></div>
+
+  <header class="site-header">
+    <a class="wordmark" href="#home" aria-label="Xavr home">xavr<span>.</span></a>
+    <nav class="site-nav" aria-label="Main navigation">
+      <a class="nav-link is-active" href="#home">Home</a>
+      <a class="nav-link" href="#links">Links</a>
+    </nav>
+    <a class="header-link" href="https://github.com/Sketizh" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+  </header>
+
+  <main>
+    <section class="hero page-width" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow reveal">HEY, I'M XAVI.</p>
+        <h1 class="hero-title" aria-label="XAVR"><span class="title-letter" style="--i:0">X</span><span class="title-letter" style="--i:1">A</span><span class="title-letter" style="--i:2">V</span><span class="title-letter" style="--i:3">R</span><span class="title-period">.</span></h1>
+        <p class="hero-subtitle reveal"><span class="rotating-tagline" id="rotating-tagline">Xavier.</span></p>
+        <div class="hero-actions reveal">
+          <a class="button button-light" href="#links">Find me online <span aria-hidden="true">↘</span></a>
+          <a class="button button-link" href="https://github.com/Sketizh" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+
+      <aside class="profile" aria-label="Xavi's profile">
+        <div class="profile-image-wrap reveal">
+          <img class="profile-image" id="profile-image" src="assets/pfp.png" alt="Xavi's profile picture">
+          <div class="profile-placeholder" id="profile-placeholder" aria-hidden="true">x<span>.</span></div>
+        </div>
+        <div class="profile-caption reveal">
+          <div>
+            <h2>Xavi</h2>
+            <p>@sketizh</p>
+          </div>
+          <span class="profile-arrow" aria-hidden="true">↗</span>
+        </div>
+      </aside>
+    </section>
+
+    <section class="links-section page-width" id="links">
+      <div class="section-heading reveal">
+        <p class="eyebrow">ELSEWHERE</p>
+        <h2>Find me <span>online.</span></h2>
+      </div>
+
+      <div class="social-list">
+        <a class="social-card reveal" href="https://github.com/Sketizh" target="_blank" rel="noopener noreferrer" aria-label="Open Sketizh's GitHub profile">
+          <span class="social-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 19 4.77 5.07 5.07 0 0 0 18.91 1S17.73.65 15 2.48a13.38 13.38 0 0 0-7 0C5.27.65 4.09 1 4.09 1A5.07 5.07 0 0 0 4 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 8 18.13V22"/></svg>
+          </span>
+          <span class="social-copy"><strong>GitHub</strong><span>@Sketizh</span></span>
+          <span class="social-arrow" aria-hidden="true">↗</span>
+        </a>
+        <a class="social-card reveal" href="https://www.roblox.com/users/7161849748/profile" target="_blank" rel="noopener noreferrer" aria-label="Open Xavi's Roblox profile" style="--delay:90ms">
+          <span class="social-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="m5.2 2 16.8 3.3L18.8 22 2 18.7 5.2 2Z"/><path class="roblox-hole" d="m10 9.2 4.7.9-.9 4.7-4.7-.9.9-4.7Z"/></svg>
+          </span>
+          <span class="social-copy"><strong>Roblox</strong><span>View profile</span></span>
+          <span class="social-arrow" aria-hidden="true">↗</span>
+        </a>
+        <a class="social-card reveal" href="https://discord.com/users/937309437880832041" target="_blank" rel="noopener noreferrer" aria-label="Open Xavi's Discord profile" style="--delay:180ms">
+          <span class="social-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M19.7 5.1A18.2 18.2 0 0 0 15.2 3l-.6 1.2a16.8 16.8 0 0 0-5.2 0L8.8 3a18.2 18.2 0 0 0-4.5 2.1C1.5 9.3.7 13.4 1.1 17.4a18.2 18.2 0 0 0 5.5 2.8L8 17.8l-2.3-1.1.6-.4a12.8 12.8 0 0 0 11.4 0l.6.4-2.3 1.1 1.4 2.4a18.2 18.2 0 0 0 5.5-2.8c.5-4.7-.8-8.8-3.2-12.3ZM8.7 14.4c-1 0-1.8-.9-1.8-2s.8-2 1.8-2 1.8.9 1.8 2-.8 2-1.8 2Zm6.6 0c-1 0-1.8-.9-1.8-2s.8-2 1.8-2 1.8.9 1.8 2-.8 2-1.8 2Z"/></svg>
+          </span>
+          <span class="social-copy"><strong>Discord</strong><span>View profile</span></span>
+          <span class="social-arrow" aria-hidden="true">↗</span>
+        </a>
+        <a class="social-card reveal" href="https://steamcommunity.com/id/Sketizh/" target="_blank" rel="noopener noreferrer" aria-label="Open Sketizh's Steam profile" style="--delay:270ms">
+          <span class="social-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><circle cx="17.8" cy="6.2" r="3.1"/><circle cx="10.3" cy="13.6" r="3.4"/><path d="m12.8 11.2 2.8-2.8M7.3 14.7l-4.1 2.1a2.3 2.3 0 1 0 1.9 4.1l4.1-2.1"/></svg>
+          </span>
+          <span class="social-copy"><strong>Steam</strong><span>Sketizh</span></span>
+          <span class="social-arrow" aria-hidden="true">↗</span>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer page-width">
+    <a class="wordmark footer-wordmark" href="#home">xavr<span>.</span></a>
+    <a class="back-to-top" href="#home">Back to top ↑</a>
+  </footer>
+
+  <aside class="music-player" id="music-player" aria-label="Music player">
+    <button class="play-button" id="music-toggle" type="button" aria-label="Play music" aria-pressed="false">
+      <svg class="play-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m8 5 11 7-11 7V5Z"/></svg>
+      <svg class="pause-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 5h4v14H7zM14 5h4v14h-4z"/></svg>
+    </button>
+    <div class="music-info"><span class="music-name">Jukebox Joints</span><span class="music-artist">A$AP Rocky <span class="music-state" id="music-state">· Paused</span></span></div>
+    <div class="track-control">
+      <input class="track-range" id="music-progress" type="range" min="0" max="100" step="0.1" value="0" aria-label="Track position">
+      <div class="track-times"><span id="music-current">0:00</span><span id="music-duration">0:00</span></div>
+    </div>
+    <button class="volume-button" id="volume-toggle" type="button" aria-label="Mute music">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9v6h4l5 4V5L8 9H4Z"/><path d="M16 9a4 4 0 0 1 0 6M18.5 6.5a7.5 7.5 0 0 1 0 11"/></svg>
+    </button>
+    <input class="volume-range" id="volume-range" type="range" min="0" max="1" step="0.01" value="0.35" aria-label="Volume">
+  </aside>
+
+  <audio id="background-audio" src="assets/song.mp3" preload="auto" loop></audio>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
