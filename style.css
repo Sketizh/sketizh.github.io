@@ -117,7 +117,10 @@ button:focus-visible, a:focus-visible, input:focus-visible { outline: 2px solid 
 .social-icon svg { width: 17px; height: 17px; fill: none; stroke: currentColor; stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; }
 .social-card:nth-child(2) .social-icon svg { fill: currentColor; stroke: none; }
 .social-card:nth-child(2) .social-icon .roblox-hole { fill: var(--bg); }
-.social-card:nth-child(3) .social-icon svg { fill: currentColor; stroke: none; }
+.social-card:nth-child(4) .social-icon svg {
+  fill: currentColor;
+  stroke: none;
+}
 .social-copy { min-width: 0; display: flex; flex-direction: column; gap: 2px; }
 .social-copy strong { font-size: 13px; font-weight: 700; }
 .social-copy span { color: var(--muted); font-size: 11px; }
